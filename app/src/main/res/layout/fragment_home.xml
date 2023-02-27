@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE androidx.constraintlayout.widget.ConstraintLayout [<!ELEMENT androidx.constraintlayout.widget.ConstraintLayout (androidx.constraintlayout.widget.ConstraintLayout|ImageView|EditText|LinearLayout|TextView)*><!ATTLIST androidx.constraintlayout.widget.ConstraintLayoutandroid:background CDATA #IMPLIEDandroid:elevation CDATA #IMPLIEDandroid:id CDATA #IMPLIEDandroid:layout_height CDATA #REQUIREDandroid:layout_marginEnd CDATA #IMPLIEDandroid:layout_marginStart CDATA #IMPLIEDandroid:layout_marginTop CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:orientation CDATA #IMPLIEDandroid:paddingBottom CDATA #IMPLIEDapp:layout_constraintEnd_toEndOf CDATA #IMPLIEDapp:layout_constraintHorizontal_bias CDATA #IMPLIEDapp:layout_constraintStart_toStartOf CDATA #IMPLIEDapp:layout_constraintTop_toBottomOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #IMPLIEDtools:context CDATA #IMPLIEDxmlns:android CDATA #IMPLIEDxmlns:app CDATA #IMPLIEDxmlns:tools CDATA #IMPLIED><!ELEMENT ImageView (#PCDATA)><!ATTLIST ImageViewandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginBottom CDATA #IMPLIEDandroid:layout_marginEnd CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:scaleType CDATA #IMPLIEDapp:layout_constraintBottom_toBottomOf CDATA #REQUIREDapp:layout_constraintEnd_toEndOf CDATA #REQUIREDapp:layout_constraintHorizontal_bias CDATA #IMPLIEDapp:layout_constraintStart_toStartOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #REQUIREDapp:layout_constraintVertical_bias CDATA #IMPLIEDapp:srcCompat CDATA #REQUIRED><!ELEMENT EditText (#PCDATA)><!ATTLIST EditTextandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginStart CDATA #REQUIREDandroid:layout_marginEnd CDATA #REQUIREDandroid:layout_marginBottom CDATA #REQUIREDandroid:background CDATA #REQUIREDandroid:drawableStart CDATA #REQUIREDandroid:drawablePadding CDATA #REQUIREDandroid:ems CDATA #REQUIREDandroid:hint CDATA #REQUIREDandroid:inputType CDATA #REQUIREDandroid:paddingStart CDATA #REQUIREDandroid:textSize CDATA #REQUIREDandroid:textStyle CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #REQUIREDapp:layout_constraintEnd_toEndOf CDATA #REQUIREDapp:layout_constraintHorizontal_bias CDATA #REQUIREDapp:layout_constraintStart_toStartOf CDATA #REQUIREDapp:layout_constraintTop_toTopOf CDATA #REQUIRED><!ELEMENT LinearLayout (LinearLayout)*><!ATTLIST LinearLayoutandroid:background CDATA #IMPLIEDandroid:elevation CDATA #IMPLIEDandroid:id CDATA #IMPLIEDandroid:layout_height CDATA #REQUIREDandroid:layout_margin CDATA #IMPLIEDandroid:layout_marginEnd CDATA #IMPLIEDandroid:layout_marginStart CDATA #IMPLIEDandroid:layout_weight CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:orientation CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #IMPLIEDapp:layout_constraintEnd_toEndOf CDATA #IMPLIEDapp:layout_constraintStart_toStartOf CDATA #IMPLIEDapp:layout_constraintTop_toBottomOf CDATA #IMPLIED><!ELEMENT TextView (#PCDATA)><!ATTLIST TextViewandroid:id CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginTop CDATA #IMPLIEDandroid:layout_width CDATA #REQUIREDandroid:text CDATA #REQUIREDandroid:textColor CDATA #REQUIREDandroid:textSize CDATA #REQUIREDandroid:textStyle CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #IMPLIEDapp:layout_constraintEnd_toEndOf CDATA #IMPLIEDapp:layout_constraintEnd_toStartOf CDATA #IMPLIEDapp:layout_constraintStart_toStartOf CDATA #REQUIREDapp:layout_constraintTop_toBottomOf CDATA #IMPLIEDapp:layout_constraintTop_toTopOf CDATA #IMPLIED><!ELEMENT div (div|p|h5|box-icon|Bar|Radar)*><!ATTLIST divclass CDATA #IMPLIEDclassName CDATA #IMPLIED><!ELEMENT p (span)*><!ATTLIST pclassName CDATA #REQUIRED><!ELEMENT h5 (#PCDATA)><!ATTLIST h5className CDATA #REQUIRED><!ELEMENT span (#PCDATA)><!ATTLIST spanclassName CDATA #REQUIRED><!ELEMENT box-icon (#PCDATA)><!ATTLIST box-iconcolor CDATA #REQUIREDname CDATA #REQUIREDtype CDATA #IMPLIED><!ELEMENT Bar (#PCDATA)><!ATTLIST Baroptions CDATA #REQUIRED><!ELEMENT Radar (#PCDATA)><!ATTLIST Radardata CDATA #REQUIRED>]>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="46dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/top_background" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="170dp"
+            android:background="@drawable/search_back"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Search...."
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+
+            android:background="@drawable/white_background"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="18dp"
+        android:elevation="6dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_background"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_supervised_user_circle_24" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26 User"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Total User"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="18dp"
+        android:elevation="6dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_background"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_supervised_user_circle_24" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26 User"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Total User"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
