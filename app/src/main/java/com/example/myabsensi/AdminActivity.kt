@@ -3,6 +3,7 @@ package com.example.myabsensi
 import android.os.Bundle
 import android.view.Menu
 import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -56,6 +57,14 @@ class AdminActivity : AppCompatActivity() {
         // Get email from prefManager and set it to textEmail TextView
         binding.navView.getHeaderView(0).findViewById<TextView>(R.id.textUserEmail).text = prefManager.getEmail()
 
+
+        // Logout button click listener//gaggal
+
+        nav_logout.setOnClickListener {
+            prefManager.clear()
+            Toast.makeText(this, "Logout berhasil", Toast.LENGTH_SHORT).show()
+            finish()
+        }
 
     }
 

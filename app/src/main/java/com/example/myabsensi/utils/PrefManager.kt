@@ -48,6 +48,12 @@ class PrefManager(var context: Context) {
             ?.apply()
     }
 
+
+//    fun clear (){
+//        editor?.clear()
+//        editor?.commit()
+//    }
+
 //    fun getToken(): String? {
 //        return pref?.getString("token", "")
 //    }
