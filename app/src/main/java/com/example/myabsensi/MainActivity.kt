@@ -1,5 +1,6 @@
 package com.example.myabsensi
 
+//import AdminActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -61,8 +62,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                 val status = response.body()?.status
                 val user = response.body()?.data?.name
-                val token = response.body()?.token?.token
-                val id = response.body()?.token?.id
+                val token = response.body()?.meta?.token
+                val id = response.body()?.data?.id
                 if (status == "success" && user.equals("Admin")){
                     val intent = Intent(this@MainActivity,AdminActivity::class.java)
                     prefManager.setLoggin(true)

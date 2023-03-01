@@ -6,6 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiService {
+
     //    var BASE_URL:String="https://jibril-project.000webhostapp.com/api/"
     var BASE_URL:String="http://zaid15.my.id/api/"
 //    var BASE_URL:String="http://192.168.43.233:8000/api/"
@@ -23,6 +24,5 @@ object ApiService {
                 .build()
 
             return retrofit.create(ApiEndpoint::class.java)
-
         }
 }

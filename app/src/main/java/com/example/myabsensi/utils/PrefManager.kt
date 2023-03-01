@@ -35,6 +35,19 @@ class PrefManager(var context: Context) {
         return pref?.getString("type", "")
     }
 
+    fun getName():String? {
+        return pref?.getString("name", "")
+    }
+
+    fun getEmail():String? {
+        return pref?.getString("email", "")
+    }
+
+    fun clear() {
+        editor?.clear()
+            ?.apply()
+    }
+
 //    fun getToken(): String? {
 //        return pref?.getString("token", "")
 //    }
@@ -46,4 +59,5 @@ class PrefManager(var context: Context) {
 //        editor?.clear()
 //        editor?.commit()
 //    }
+
 }
